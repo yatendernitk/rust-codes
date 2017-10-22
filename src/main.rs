@@ -8,7 +8,12 @@ fn main() {
   // println!("hello world");
   // let x = 90.456;
   // println!("this is x {}", x);
-  guessing();
+  // guessing();
+  let x = sum(5,6);
+  println!("{}", x);
+}
+fn sum(a: u32, b: u32) -> u32{
+  a+b
 }
 
 fn guessing() {
