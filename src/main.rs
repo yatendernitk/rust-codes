@@ -11,9 +11,24 @@ fn main() {
   // guessing();
   let x = sum(5,6);
   println!("{}", x);
+  rev_print_nums();
+  simple_iteration_print(&[1, 2, 3, 5]);
 }
-fn sum(a: u32, b: u32) -> u32{
+
+fn sum(a: u32, b: u32) -> u32 {
   a+b
+}
+
+fn simple_iteration_print(a: &[u32]) {
+  for elem in a {
+    println!("element is {} ",elem);
+  }
+}
+
+fn rev_print_nums() {
+  for elem in (1..90).rev() {
+    println!("element printed is {}", elem);
+  }
 }
 
 fn guessing() {
